@@ -1,0 +1,38 @@
+{
+  "name": "make-me-lol",
+  "version": "0.1.0",
+  "description": "A command-line tool to make you laugh.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">= 4.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/himynameisdave/make-me-lol.git"
+  },
+  "keywords": [
+    "fun",
+    "command-line",
+    "cli",
+    "gifs",
+    "videos",
+    "lols"
+  ],
+  "bin": {
+    "make-me-lol": "./index.js"
+  },
+  "author": "Dave Lunny",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/himynameisdave/make-me-lol/issues"
+  },
+  "homepage": "https://github.com/himynameisdave/make-me-lol#readme",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "open": "0.0.5",
+    "request": "^2.67.0"
+  }
+}
