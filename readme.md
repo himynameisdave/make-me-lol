@@ -2,6 +2,8 @@
 
 A command-line tool to make you laugh. Because who doesn't like to laugh :smile:
 
+![example](http://i.imgur.com/2fHBaxQ.gif)
+
 **Install**
 
 ```
