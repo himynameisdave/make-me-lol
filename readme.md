@@ -1,6 +1,6 @@
 ### make-me-lol
 
-A command-line tool to make you laugh. Because who doesn't like to laugh :smile:
+A command-line tool to make you laugh. Because who doesn't like to laugh, amirite? :stuck_out_tongue: All ya gotta do is type the command and it opens a random funny picture, gif or video from Reddit.
 
 ![example](http://i.imgur.com/2fHBaxQ.gif)
 
