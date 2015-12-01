@@ -1,6 +1,6 @@
 #### make-me-lol
 
-A command-line tool to make you laugh. Because who doesn't like to laugh :smile: !
+A command-line tool to make you laugh. Because who doesn't like to laugh :smile:
 
 **Install**
 
@@ -16,7 +16,7 @@ You gotta have at least `node v4.0.0` for this to work, cause it's pretty ES6exy
 Dead simple all you gotta do is run:
 
 ```
-make-me-lol [options]
+make-me-lol [options or no options its cool]
 ```
 
 **Options**
