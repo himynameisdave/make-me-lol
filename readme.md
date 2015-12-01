@@ -1,4 +1,4 @@
-#### make-me-lol
+### make-me-lol
 
 A command-line tool to make you laugh. Because who doesn't like to laugh :smile:
 
