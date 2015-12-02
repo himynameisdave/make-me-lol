@@ -2,6 +2,7 @@
 "use strict";
 const commander  = require("commander");
 const request    = require("request-promise");
+const open       = require("open");
 const redditUrls = [
         "https://www.reddit.com/r/funnyvideos/.json",
         "https://www.reddit.com/r/Funnypics/.json",
@@ -14,6 +15,7 @@ const redditUrls = [
             .option('-g, --gif',   'opens a funny gif')
             .option('-p, --pic',   'opens a funny pic')
             .option('-q, --quiet', 'opens a funny not video')
+            .option('-o, --output','output only without openning')
             .parse(process.argv);
 
   //  Sets the lookup url based on command line arguments
@@ -42,7 +44,11 @@ const redditUrls = [
         n = Math.floor(Math.random() * (l - 1)) + 1;
       };
       //  open our funny url
-      console.log(parsed[n].data.url);
+      if( !commander.output ){
+        open(parsed[n].data.url);
+      }else{
+        console.log(parsed[n].data.url);
+      }
       process.exit(1);
     })
     .catch( err => {
