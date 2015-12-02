@@ -30,6 +30,7 @@ make-me-lol [options or no options its cool]
 -g, --gif      opens a funny gif
 -p, --pic      opens a funny pic
 -q, --quiet    opens a funny not video
+-o, --output   output only without opening
 ```
 
 **Contribute**

@@ -2,6 +2,7 @@
 "use strict";
 const commander  = require("commander");
 const request    = require("request-promise");
+const version    = require("./package.json").version;
 const open       = require("open");
 const redditUrls = [
         "https://www.reddit.com/r/funnyvideos/.json",
@@ -10,7 +11,7 @@ const redditUrls = [
         "https://www.reddit.com/r/Funny/.json"
       ];
   //    Register arguments with commander
-  commander.version('0.1.0')
+  commander.version(version)
             .option('-v, --video', 'opens a funny video')
             .option('-g, --gif',   'opens a funny gif')
             .option('-p, --pic',   'opens a funny pic')
@@ -47,7 +48,7 @@ const redditUrls = [
       if( !commander.output ){
         open(parsed[n].data.url);
       }else{
-        console.log(parsed[n].data.url);
+        console.log("Your lol can be found over here:\n"+parsed[n].data.url);
       }
       process.exit(1);
     })
