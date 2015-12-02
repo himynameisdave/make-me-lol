@@ -15,7 +15,7 @@ const redditUrls = [
             .option('-g, --gif',   'opens a funny gif')
             .option('-p, --pic',   'opens a funny pic')
             .option('-q, --quiet', 'opens a funny not video')
-            .option('-o, --output','output only without openning')
+            .option('-o, --output','output only without opening')
             .parse(process.argv);
 
   //  Sets the lookup url based on command line arguments
