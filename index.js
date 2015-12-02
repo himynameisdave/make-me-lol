@@ -5,7 +5,9 @@ var path = require('path');
 var relPath = __dirname + '/make-me-lol.js';
 relPath = relPath.replace(/\\/g, '/');
 
-exec('node --harmony ' + relPath, function(error, stdout, stderr) {
+var flags = process.argv.splice(2).join(' ');
+
+exec('node --harmony ' + relPath + ' ' + flags, function(error, stdout, stderr) {
     console.log(stdout);
     console.error(stderr);
     if (error) {
