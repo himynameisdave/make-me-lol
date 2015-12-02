@@ -10,7 +10,7 @@ A command-line tool to make you laugh. Because who doesn't like to laugh, amirit
 npm i -g make-me-lol
 ```
 
-You gotta have at least `node v4.0.0` for this to work, cause it's pretty ES6exy with it's use of [Promises](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise) and all.
+You gotta have at least `node v4.0.0` or an [`--harmony` node version](https://nodejs.org/en/docs/es6/) (tested in v0.12.7) for this to work, cause it's pretty ES6exy with it's use of [Promises](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise) and all.
 
 
 **Usage**
