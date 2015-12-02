@@ -15,6 +15,7 @@ const redditUrls = [
             .option('-g, --gif',   'opens a funny gif')
             .option('-p, --pic',   'opens a funny pic')
             .option('-q, --quiet', 'opens a funny not video')
+            .option('-o, --output','output only without opening')
             .parse(process.argv);
 
   //  Sets the lookup url based on command line arguments
@@ -43,7 +44,11 @@ const redditUrls = [
         n = Math.floor(Math.random() * (l - 1)) + 1;
       };
       //  open our funny url
-      open(parsed[n].data.url);
+      if( !commander.output ){
+        open(parsed[n].data.url);
+      }else{
+        console.log(parsed[n].data.url);
+      }
       process.exit(1);
     })
     .catch( err => {
