@@ -2,7 +2,6 @@
 "use strict";
 const commander  = require("commander");
 const request    = require("request-promise");
-const open       = require("open");
 const redditUrls = [
         "https://www.reddit.com/r/funnyvideos/.json",
         "https://www.reddit.com/r/Funnypics/.json",
@@ -43,7 +42,7 @@ const redditUrls = [
         n = Math.floor(Math.random() * (l - 1)) + 1;
       };
       //  open our funny url
-      open(parsed[n].data.url);
+      console.log(parsed[n].data.url);
       process.exit(1);
     })
     .catch( err => {
