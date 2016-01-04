@@ -4,7 +4,7 @@
   "description": "A command-line tool to make you laugh.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postinstall": "cp -R node_modules/git-label-packages/packages/status.json node_modules/git-label-packages/packages/type.json labels/packages"
   },
   "engines": {
     "node": ">= 0.10.5"
@@ -32,6 +32,8 @@
   "homepage": "https://github.com/himynameisdave/make-me-lol#readme",
   "dependencies": {
     "commander": "^2.9.0",
+    "git-label": "^3.3.0",
+    "git-label-packages": "^1.1.0",
     "open": "0.0.5",
     "request-promise": "^1.0.2"
   }
